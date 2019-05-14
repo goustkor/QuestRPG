@@ -6,7 +6,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 client.config = config;
 
-fs.readdir("./events/", (err, files) => {
+fs.readdir("./src/events/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
     const event = require(`./events/${file}`);
@@ -17,7 +17,7 @@ fs.readdir("./events/", (err, files) => {
 
 client.commands = new Enmap();
 
-fs.readdir("./commands/", (err, files) => {
+fs.readdir("./src/commands/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
     if (!file.endsWith(".js")) return;

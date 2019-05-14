@@ -1,0 +1,23 @@
+{
+  "name": "questrpg",
+  "version": "0.0.1-ALPHA",
+  "description": "",
+  "main": " ",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goustkor/QuestRPG.git"
+  },
+  "author": "Goustkor <goustkor@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goustkor/QuestRPG/issues"
+  },
+  "homepage": "https://github.com/goustkor/QuestRPG#readme",
+  "dependencies": {
+    "discord.js": "^11.5.0",
+    "enmap": "^4.8.7"
+  }
+}
